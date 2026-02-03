@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Photoshop per Giuseppe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .tutorials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .tutorial-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .tutorial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .duration {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .level {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #555;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: 8px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .tutorials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Tutorial Photoshop</h1>
+            <p>Raccolta di video tutorial base per imparare Photoshop per Giuseppe Messina</p>
+        </header>
+
+        <div class="tutorials-grid">
+            <!-- Tutorial 1 -->
+            <a href="https://www.youtube.com/watch?v=nV6COo-Z8Gk&t=318&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/nV6COo-Z8Gk/maxresdefault.jpg" alt="Tutorial 1" class="thumbnail">
+                <div class="card-content">
+                    <h3>1. Impostazione del layout e delle guide</h3>
+                    <p>Impara ad usare le guide layout per impostare il calendario mensile.</p>
+                    <span class="duration">⏱ 12.20 min</span>
+                    <span class="level">Principiante</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 2 -->
+            <a href="https://www.youtube.com/watch?v=bmSAdx2wJ-k&t=2&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/bmSAdx2wJ-k/maxresdefault.jpg" alt="Tutorial 2" class="thumbnail">
+                <div class="card-content">
+                    <h3>2. I livelli in Photoshop</h3>
+                    <p>Il concetto di livelli in Photoshop; Creare, spostare, collegare unire, livelli e gruppi di livelli; Opacità dei livelli; Lavorare con i livelli.</p>
+                    <span class="duration">⏱ 25 min</span>
+                    <span class="level">Principiante</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 3 -->
+            <a href="https://www.youtube.com/watch?v=4INSSxAloVA&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/4INSSxAloVA/maxresdefault.jpg" alt="Tutorial 3" class="thumbnail">
+                <div class="card-content">
+                    <h3>3. Gli stili di livello</h3>
+                    <p>Gli stili di livello in Photoshop. Come si usano: un esempio pratico applicato ad un testo.</p>
+                    <span class="duration">⏱ 9 min</span>
+                    <span class="level">Principiante</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 4 -->
+            <a href="https://www.youtube.com/watch?v=nSkwwMbkaK8&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/nSkwwMbkaK8/maxresdefault.jpg" alt="Tutorial 4" class="thumbnail">
+                <div class="card-content">
+                    <h3>4. I metodi di fusione</h3>
+                    <p>Cosa sono i metodi di fusione dei livelli in Photoshop. Alcuni esempi di utilizzo.</p>
+                    <span class="duration">⏱ 17 min</span>
+                    <span class="level">Intermedio</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 5 -->
+            <a href="https://www.youtube.com/watch?v=ABcSOMD3GWE&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/ABcSOMD3GWE/maxresdefault.jpg" alt="Tutorial 5" class="thumbnail">
+                <div class="card-content">
+                    <h3>4.1 I livelli di regolazione</h3>
+                    <p>Conosciamo i livelli di regolazione: metodi non distruttivi per lavorare con Photoshop.</p>
+                    <span class="duration">⏱ 10 min</span>
+                    <span class="level">Intermedio</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 6 -->
+            <a href="https://www.youtube.com/watch?v=_3XZL67Bb98&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/_3XZL67Bb98/maxresdefault.jpg" alt="Tutorial 6" class="thumbnail">
+                <div class="card-content">
+                    <h3>4.2 Gli Oggetti avanzati</h3>
+                    <p>Cosa sono gli Oggetti avanzati e perchè sono utili.</p>
+                    <span class="duration">⏱ 20 min</span>
+                    <span class="level">Intermedio</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 7 -->
+            <a href="https://www.youtube.com/watch?v=4xS7hoBGMXk&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/4xS7hoBGMXk/maxresdefault.jpg" alt="Tutorial 7" class="thumbnail">
+                <div class="card-content">
+                    <h3>4.3 I Filtri e i Filtri Avanzati</h3>
+                    <p>Visione di alcuni Filtri disponibili in Photoshop: filtri correttivi, filtri creativi, filtri Avanzati (Smart Filters). Imparare ad applicare effetti in modo non-distruttivo, permettendo di modificare i parametri in qualsiasi momento senza perdere la qualità originale dei pixel.</p>
+                    <span class="duration">⏱ 25 min</span>
+                    <span class="level">Intermedio</span>
+                </div>
+            </a>
+
+            <!-- Tutorial 8 -->
+            <a href="https://www.youtube.com/watch?v=7jueeMdQWfw&autoplay=1&cc_load_policy=1" target="_blank" class="tutorial-card">
+                <img src="https://img.youtube.com/vi/7jueeMdQWfw/maxresdefault.jpg" alt="Tutorial 8" class="thumbnail">
+                <div class="card-content">
+                    <h3>4.4 Le Maschere di livello</h3>
+                    <p>Imparare a usare le Maschere di Livello: lo strumento essenziale per nascondere o mostrare parti di un'immagine senza cancellare i pixel. Permettendoti di modificare in modo reversibile.</p>
+                    <span class="duration">⏱ 9 min</span>
+                    <span class="level">Intermedio</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
